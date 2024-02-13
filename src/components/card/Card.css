@@ -17,3 +17,7 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
+
+h2 {
+  color: purple;
+}
