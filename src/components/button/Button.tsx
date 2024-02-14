@@ -3,7 +3,7 @@ import "./Button.css";
 
 export interface ButtonProps {
     title: string;
-    onClick: React.MouseEventHandler<HTMLButtonElement>;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
     type: 'warn' | 'submit'
 }
 
