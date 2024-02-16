@@ -4,7 +4,7 @@ import "./Nav.css";
 
 export interface CardProps {
     items: string[];
-    onClick?: React.MouseEventHandler<HTMLLIElement>;
+    onClick: any;
 }
 
 export default function Card ({
@@ -15,7 +15,7 @@ export default function Card ({
       <section className="nav-container">
         <h1>Components</h1>
         {items.map((item, i) => (
-          <li key={i} onClick={onClick}>{item}</li>
+          <li key={i} value={item} onClick={() => onClick(item.toLowerCase())}>{item}</li>
         ))}
       </section>
     );
