@@ -8,14 +8,15 @@ export interface ButtonProps {
 }
 
 export default function Button ({
-    title,
+    title = "Button",
     onClick,
-    type,
+    type = "submit",
     children
 }: React.PropsWithChildren<ButtonProps>) {
+  let classes = 'library-button ' + type;
     return (
       <>
-        <button className={type} onClick={onClick}>{title}</button>
+        <button className={classes} onClick={onClick}>{title}</button>
         {children}
       </>
     );

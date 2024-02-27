@@ -4,18 +4,21 @@
   width: 15rem;
   left: 0;
   top: 0;
-  border-right: 1px solid gray;
+  border-right: 1px solid lightgray;
+  background-color: black;
 
   h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     margin-left: 1rem;
+    color: white;
   }
 
   li {
     list-style-type: none;
     cursor: pointer;
     padding: 1rem;
+    color: white;
 
     &:hover {
       background-color: lightgray;
